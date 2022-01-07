@@ -27,7 +27,7 @@ public class AddSellerProductUseCase {
 
         try(Connection connection = this.mysqlDriver.getConnection()) {
             try (PreparedStatement stmt = connection.prepareStatement(
-                    "INSERT 'item' ('name', 'quantity', 'category', 'size', 'price', 'description', 'pictureURL' )" +
+                    "INSERT `item` (`name`, `quantity`, `category`, `size`, `price`, `description`, `pictureURL` )" +
                     " VALUES (?,?,?,?,?,?,?)"
                 )) {
                     stmt.setString(1, input.getName());

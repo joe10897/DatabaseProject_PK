@@ -26,8 +26,8 @@ public class AddOrderUseCase {
      
         try(Connection connection = this.mysqlDriver.getConnection()) {
             try (PreparedStatement stmt = connection.prepareStatement(
-                    "INSERT INTO 'order'" +
-                    "('orderDate','status','discountID','orderUserID')" +
+                    "INSERT INTO `order`" +
+                    "(`orderDate`,`status`,`discountID`,`orderUserID`)" +
                     "VALUES(?, ?, ?, ?)"
                 )) {
                     stmt.setString(1, input.getOrderDateString());
@@ -44,7 +44,7 @@ public class AddOrderUseCase {
     }  
     public void getOrderID(Connection connection,AddOrderUseCaseInput input,AddOrderUseCaseOutput output){
             try (PreparedStatement stmt = connection.prepareStatement(
-                "SELECT 'id' FROM 'order' WHERE 'orderUserID'= ? && 'orderDate' = ?")) {
+                "SELECT `id` FROM `order` WHERE `orderUserID`= ? && `orderDate` = ?")) {
                     stmt.setString(1, Integer.toString(input.getUserID()));
                     stmt.setString(2, input.getOrderDateString());
                 try (ResultSet rs = stmt.executeQuery()) {
@@ -84,7 +84,7 @@ public class AddOrderUseCase {
             
             }else if (itemId != 0){
                 try (PreparedStatement stmt = connection.prepareStatement(
-                        "INSERT 'itemlist' VALUES(?,?,?)"
+                        "INSERT `itemlist` VALUES(?,?,?)"
                     )) {                        
                         stmt.setString(1, String.valueOf(itemId));
                         stmt.setString(2, String.valueOf(output.getId()));
@@ -102,7 +102,7 @@ public class AddOrderUseCase {
     public Boolean isInItemList(Connection connection,int itemID, int orderID){
         Boolean status=false;
         try (PreparedStatement stmt = connection.prepareStatement(
-            "SELECT 'orderItemID' FROM 'itemlist' WHERE 'orderID'= ?")) {
+            "SELECT `orderItemID` FROM `itemlist` WHERE `orderID`= ?")) {
                 stmt.setString(1, String.valueOf(orderID));
             try (ResultSet rs = stmt.executeQuery()) {
                 while(rs.next()) {
@@ -123,7 +123,7 @@ public class AddOrderUseCase {
     public int getAmount(Connection connection,int itemID, int orderID){
         int itemAmount = 0;
         try (PreparedStatement stmt = connection.prepareStatement(
-            "SELECT 'amount' FROM 'itemlist' WHERE 'orderID'= ? AND 'orderItemID'=? ")) {
+            "SELECT `amount` FROM `itemlist` WHERE `orderID`= ? AND `orderItemID`=? ")) {
                 stmt.setString(1, String.valueOf(orderID));
                 stmt.setString(2, String.valueOf(itemID));
             try (ResultSet rs = stmt.executeQuery()) {

@@ -24,7 +24,7 @@ public class RemoveLikeUseCase {
 
         try(Connection connection = this.mysqlDriver.getConnection()) {
             try (PreparedStatement stmt = connection.prepareStatement(
-                    "DELETE FROM 'like' WHERE userID = ? AND itemID = ?"
+                    "DELETE FROM `like` WHERE userID = ? AND itemID = ?"
                 )) {
                     stmt.setString(1, Integer.toString(input.getUserID()));
                     stmt.setString(2, Integer.toString(input.getItemID()));

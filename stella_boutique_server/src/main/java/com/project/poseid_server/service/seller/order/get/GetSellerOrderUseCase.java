@@ -29,7 +29,7 @@ public class GetSellerOrderUseCase {
         List<Item> itemList = new ArrayList<>();
         try(Connection connection = this.mysqlDriver.getConnection()){
             try (PreparedStatement stmt = connection.prepareStatement(
-                "SELECT * FROM 'order' ORDER BY 'status' ASC")) {
+                "SELECT * FROM `order` ORDER BY `status` ASC")) {
                 try (ResultSet rs = stmt.executeQuery()) { 
                     while(rs.next()) {
                         int id = Integer.parseInt(rs.getString("id"));

@@ -24,7 +24,7 @@ public class AddLikeUseCase {
 
         try(Connection connection = this.mysqlDriver.getConnection()) {
             try (PreparedStatement stmt = connection.prepareStatement(
-                    "INSERT INTO 'like' VALUES(?, ?)"
+                    "INSERT INTO `like` VALUES(?, ?)"
                 )) {
                     stmt.setString(1, Integer.toString(input.getUserID()));
                     stmt.setString(2, Integer.toString(input.getItemID()));
