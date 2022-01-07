@@ -1,7 +1,9 @@
-#CREATE DATABASE IF NOT EXISTS stella_boutique;
-USE stella_boutique;
+#CREATE DATABASE IF NOT EXISTS poseid;
+USE poseid;
+
+#ALTER stella_boutique MyTestDatabase MODIFY NAME = poseid;
  
- #select 
+#select 
 SELECT * FROM `user`;
 SELECT * FROM `item`;
 SELECT * FROM `discount`;
@@ -13,7 +15,7 @@ SHOW INDEX FROM `discount` WHERE key_name = 'PRIMARY';
 
  
 -- Table structure for table `user`
-CREATE TABLE IF NOT EXISTS `user`(
+CREATE TABLE `user`(
   id int(6) NOT NULL AUTO_INCREMENT,
   password varchar(100) NOT NULL,
   fullname varchar(100) NOT NULL,
@@ -94,7 +96,7 @@ CREATE TABLE IF NOT EXISTS `rate` (
 );
 
 ######################################
-USE stella_boutique;
+USE poseid;
 
 INSERT `user` (`password`,`fullname`,`username`,`birthday`,`address`,`phoneNumber`,`email`) VALUES
 ('test', 'eric', 'eric','1998-12-20','home' ,'0912312345' , 'eric@gmail.com'),
