@@ -29,7 +29,7 @@ public class GetSellerDiscountUseCase {
         List<Discount> discountList = new ArrayList<>();   
         try(Connection connection = this.mysqlDriver.getConnection()){
             try (PreparedStatement stmt = connection.prepareStatement(
-                "SELECT * FROM 'discount'")) {
+                "SELECT * FROM `discount`")) {
                 try (ResultSet rs = stmt.executeQuery()) { 
                     while(rs.next()) {
                         int id = Integer.parseInt(rs.getString("id"));

@@ -21,8 +21,8 @@ public class AddUserUseCase {
     private void execute(String username, String password, String fullname, String birthday, String address, String phoneNumber, String email) {
         try(Connection connection = this.mysqlDriver.getConnection()) {
             try (PreparedStatement stmt = connection.prepareStatement(
-                    "INSERT INTO 'user'" +
-                    "('password', 'fullname', 'username', 'birthday', 'address', 'phoneNumber', 'email')" +
+                    "INSERT INTO `user`" +
+                    "(`password`, `fullname`, `username`, `birthday`, `address`, `phoneNumber`, `email`)" +
                     "VALUES(?, ?, ?, ?, ?, ?, ?)"
                 )) {
                     stmt.setString(1, password);

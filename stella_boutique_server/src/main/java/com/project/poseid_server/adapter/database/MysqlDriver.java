@@ -8,9 +8,9 @@ public class MysqlDriver {
     private String password;
 
     public MysqlDriver() {
-        this.mysqlURL = "";
+        this.mysqlURL = "jdbc:mysql://localhost:3306/?user=root";
         this.user = "root";
-        this.password = "admin";
+        this.password = "admin"; // Asdf2460
     }
 
     public Connection getConnection() throws SQLException {

@@ -31,7 +31,7 @@ public class SellerService {
         List<Item> productList = new ArrayList<>();    
         try(Connection connection = this.mysqlDriver.getConnection()){
             try (PreparedStatement stmt = connection.prepareStatement(
-                "SELECT * FROM 'item' WHERE 'quantity' != 0")) {
+                "SELECT * FROM `item` WHERE `quantity` != 0")) {
                 try (ResultSet rs = stmt.executeQuery()) {
                     while(rs.next()) {
                         int id = Integer.parseInt(rs.getString("id"));
@@ -67,7 +67,7 @@ public class SellerService {
         List<Discount> discountList = new ArrayList<>();   
         try(Connection connection = this.mysqlDriver.getConnection()){
             try (PreparedStatement stmt = connection.prepareStatement(
-                "SELECT * FROM 'discount'")) {
+                "SELECT * FROM `discount`")) {
                 try (ResultSet rs = stmt.executeQuery()) { 
                     while(rs.next()) {
                         int id = Integer.parseInt(rs.getString("id"));
@@ -94,7 +94,7 @@ public class SellerService {
 
     public void getRate(Item item,Connection connection) throws SQLException{
         try (PreparedStatement stmt = connection.prepareStatement(
-            "SELECT * FROM 'rate' WHERE 'rateItemID' =  ?")) {
+            "SELECT * FROM `rate` WHERE `rateItemID` =  ?")) {
                 stmt.setString(1, Integer.toString(item.getItemID()));
             try (ResultSet rs = stmt.executeQuery()) {
                 while(rs.next()) {

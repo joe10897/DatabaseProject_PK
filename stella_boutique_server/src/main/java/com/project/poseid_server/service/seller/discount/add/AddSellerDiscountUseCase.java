@@ -23,7 +23,7 @@ public class AddSellerDiscountUseCase {
     public void execute(AddSellerDiscountUseCaseInput input, AddSellerDiscountUseCaseOutput output) throws AddDiscountErrorException{
         try(Connection connection = this.mysqlDriver.getConnection()){
             try (PreparedStatement stmt = connection.prepareStatement(
-                "INSERT INTO 'discount' ('value','code','name','startDate','endDate')"
+                "INSERT INTO `discount` (`value`,`code`,`name`,`startDate`,`endDate`)"
                 + "VALUES(?,?,?,?,?)")) {
                     stmt.setString(1, Float.toString(input.getValue()));
                     stmt.setString(2, input.getCode());

@@ -27,7 +27,7 @@ public class RemoveSellerProductUseCase {
         System.out.println("service~");
         try(Connection connection = this.mysqlDriver.getConnection()) {
             try (PreparedStatement stmt = connection.prepareStatement(
-                "UPDATE 'item' SET 'quantity'=?  WHERE 'id'=? ")) {                    
+                "UPDATE `item` SET `quantity`=?  WHERE `id`=? ")) {                    
                 stmt.setString(1, Integer.toString(0));
                 stmt.setString(2, Integer.toString(input.getItemID()));
 

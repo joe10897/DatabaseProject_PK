@@ -27,7 +27,7 @@ public class UpdateSellerProductUseCase {
         System.out.println("service~");
         try(Connection connection = this.mysqlDriver.getConnection()) {
             try (PreparedStatement stmt = connection.prepareStatement(
-                "UPDATE 'item' SET 'name'=? , 'price' =? , 'description'=? WHERE 'id'=? ")) {                    
+                "UPDATE `item` SET `name`=? , `price` =? , `description`=? WHERE `id`=? ")) {                    
                 stmt.setString(1, input.getName());
                 stmt.setString(2, Integer.toString(input.getPrice()));
                 stmt.setString(3, input.getDescription());

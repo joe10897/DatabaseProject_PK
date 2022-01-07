@@ -29,7 +29,7 @@ public class HistoryOrderUseCase {
         List<Item> itemList = new ArrayList<>();
         try(Connection connection=this.mysqlDriver.getConnection()){
             try (PreparedStatement stmt = connection.prepareStatement(
-                "SELECT * FROM 'order' WHERE 'orderUserID'= ? ORDER BY 'status' ASC ")) {
+                "SELECT * FROM `order` WHERE `orderUserID`= ? ORDER BY `status` ASC ")) {
                     stmt.setString(1, Integer.toString(input.getUserID()));
                 try (ResultSet rs = stmt.executeQuery()) {
                     while(rs.next()) {
@@ -56,7 +56,7 @@ public class HistoryOrderUseCase {
     public List<Item> getItemByOrder(int orderID,Connection connection){
         List<Item> boughtItem = new ArrayList<>();
         try (PreparedStatement stmt = connection.prepareStatement(
-            "SELECT * FROM 'itemlist' il JOIN 'item' i WHERE il.orderItemId = i.id and il.orderID = ?")) {
+            "SELECT * FROM `itemlist` il JOIN `item` i WHERE il.orderItemId = i.id and il.orderID = ?")) {
                 stmt.setString(1, Integer.toString(orderID));
             try (ResultSet rs = stmt.executeQuery()) {
                 while(rs.next()) {
@@ -92,7 +92,7 @@ public class HistoryOrderUseCase {
     }   
     public void getDiscountValue(Connection connection,int discountID,Order order){
         try (PreparedStatement stmt = connection.prepareStatement(
-            "SELECT 'value' FROM 'discount' WHERE 'id'= ?")) {
+            "SELECT `value` FROM `discount` WHERE `id`= ?")) {
                 stmt.setString(1, String.valueOf(discountID));
             try (ResultSet rs = stmt.executeQuery()) {
                 while(rs.next()) {
