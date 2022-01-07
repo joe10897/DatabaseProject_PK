@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
       marginRight: theme.spacing(2),
     },
     navButtons: {
-      fontFamily: 'Bebas Neue',
+      fontFamily: 'Baskerville Old Face',
       '&:hover': {
         color:'#c26d5c'
      },
@@ -145,14 +145,14 @@ function MyNavbar(props) {
     return (
       <React.Fragment>
         <Navbar className="brand-bar" style={{justifyContent:'space-between'}}>
-          <Navbar.Brand href="/">Stella Boutique</Navbar.Brand>
-            <div>
-              <p>Welome{userID == null?null:", "+username} </p> 
-            </div>
+          <Navbar.Brand href="/"><img src={require('./img/banner_logo.png')} height={'20px'} /></Navbar.Brand>
+            {/* <div>
+              <p>Welcome{userID == null?null:", "+username} </p> 
+            </div> */}
             {userID == null? 
             <div>
-              <Button href="/Login" className={classes.navButtons} variant="contained" color="primary">login</Button>
-              <Button href="/Register" className={classes.navButtons} variant="contained" color="primary">register</Button>
+              <Button href="/Login" className={classes.navButtons} variant="contained" color="primary">Sign in</Button>
+              <Button href="/Register" className={classes.navButtons} variant="contained" color="primary">Sign up</Button>
             </div> :
             <div>
               <Button color="secondary" onClick={handleCartOpen}>購物車</Button>
@@ -161,7 +161,7 @@ function MyNavbar(props) {
             </div>
             }
         </Navbar>
-        <Navbar bg="dark" variant="dark" className="menu-bar" expand="lg">
+        {/* <Navbar bg="dark" variant="dark" className="menu-bar" expand="lg">
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
@@ -184,7 +184,7 @@ function MyNavbar(props) {
             }
             
           </Navbar.Collapse>
-        </Navbar>
+        </Navbar> */}
 
         <Modal isOpen={cartOpen} toggle={handleCartOpen}>
           <ModalHeader toggle={handleCartOpen}>購物車</ModalHeader>

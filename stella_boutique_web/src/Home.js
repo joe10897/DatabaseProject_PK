@@ -29,7 +29,7 @@ function Copyright() {
     <Typography variant="body2" color="textSecondary" align="center">
       {'Copyright © '}
       <Link color="inherit" href="https://material-ui.com/">
-      Stella Boutique
+     Poseid
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}
@@ -41,8 +41,6 @@ function handleClick(event) {
   event.preventDefault();
   console.info('You clicked a breadcrumb.');
 }
-
-
 
 const useStyles = makeStyles((theme) => ({
   icon: {
@@ -64,11 +62,11 @@ const useStyles = makeStyles((theme) => ({
   heroContent: {
     backgroundColor: theme.palette.background.paper,
     padding: theme.spacing(8, 0, 6),
-    backgroundColor: '#f7ebea',
+    backgroundColor: '#000000',
   },
   heroButtons: {
     marginTop: theme.spacing(4),
-    color:'#f7ebea',
+    color:'#000000',
   },
   cardGrid: {
     paddingTop: theme.spacing(8),
@@ -90,14 +88,15 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(6),
   },
   iconColor: {
-    backgroundColor:'#9e7d7a',
+    backgroundColor:'#ebebeb',
   },
   GoButtons: {
-    borderColor:'#9e7d7a',
+    borderColor:'#ebebeb',
+    color:'#ebebeb',
     '&:hover': {
-      backgroundColor:'#9e7d7a',
-      borderColor:'#ffffff',
-      color:'#ffffff'
+      backgroundColor:'#ebebeb',
+      borderColor:'#0B121E',
+      color:'#0B121E'
    },
    box: {
     width:'100px'
@@ -109,7 +108,6 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-
 
 export default function Home() {
   const classes = useStyles();
@@ -128,23 +126,21 @@ export default function Home() {
     setAnchorProfile(null);
   };
 
-
   return (
-    
-    
+
     <React.Fragment>
       <main>
         {/* Hero unit */}
         <div className={classes.heroContent}>
           <Container maxWidth="sm">
             <div className="homecoverdiv">
-              <img src={require('./img/cover.jpg')} alt="Background" className={classes.homecover} />
+              <img src={require('./img/cover.png')} alt="Background" className={classes.homecover} />
             </div>
             <div className={classes.heroButtons}>
               <Grid container spacing={2} justify="center">
                 <Grid item>
                   <Button className={classes.GoButtons} variant="contained" color="primary" href="/Newarrivals">
-                    Shopping GOGO
+                    ENTER
                   </Button>
                 </Grid>
               </Grid>
@@ -161,11 +157,11 @@ export default function Home() {
       </main>
       {/* Footer */}
       <footer className={classes.footer}>
-        <Typography variant="h6" align="center" gutterBottom>
-          Be confident!
+        <Typography variant="h6" align="center" gutterBottom style={{fontFamily:"Baskerville Old Face"}} >
+          "The pursuit of future beauty."
         </Typography>
         <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
-          We are just wearing what we like.
+          CSIE, NTUT
         </Typography>
         <Copyright />
       </footer>
