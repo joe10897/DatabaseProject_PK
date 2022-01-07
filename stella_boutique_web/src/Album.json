@@ -2,10 +2,10 @@
 [
   {
     "id": 1,
-    "img": "./img/clothes/Dress/ClassicCheongsamInPastel.jpg",
+    "img": "./img/items/P-FC-21-001_ing01.jpg",
     "title": "Classic Cheongsam In Pastel",
     "desc": "Pretty in every Color",
-    "price": 1100,
+    "price": 250,
     "discount": true
   },
   {
