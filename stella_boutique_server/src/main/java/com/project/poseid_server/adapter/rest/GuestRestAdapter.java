@@ -1,4 +1,4 @@
-package com.project.poseid_server.rest;
+package com.project.poseid_server.adapter.rest; //是否需要adapter?
 
 import com.project.poseid_server.service.guest.rate.GetRateUseCase;
 import com.project.poseid_server.service.guest.rate.GetRateUseCaseInput;
@@ -8,8 +8,8 @@ import com.project.poseid_server.service.guest.product.GetProductUseCaseOutput;
 import com.project.poseid_server.service.guest.discount.GetDiscountUseCase;
 import com.project.poseid_server.service.guest.discount.GetDiscountUseCaseInput;
 import com.project.poseid_server.service.guest.discount.GetDiscountUseCaseOutput;
-import com.project.poseid_server.service.guest.management.add.*;
-import com.project.poseid_server.service.guest.management.login.*;
+import com.project.poseid_server.service.management.add.*;
+import com.project.poseid_server.service.management.login.*;
 
 import com.project.poseid_server.service.exception.GetDiscountErrorException;
 import com.project.poseid_server.service.exception.GetProductErrorException;
@@ -18,12 +18,13 @@ import com.project.poseid_server.service.exception.LoginErrorException;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponeseEntity;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.io.*;
 

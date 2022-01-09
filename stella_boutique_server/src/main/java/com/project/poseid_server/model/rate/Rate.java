@@ -1,4 +1,4 @@
-package com.project.poseid_service.model.rate;
+package com.project.poseid_server.model.rate;
 
 public class Rate {
     

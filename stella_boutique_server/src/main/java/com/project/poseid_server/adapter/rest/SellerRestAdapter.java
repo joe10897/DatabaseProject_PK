@@ -1,4 +1,4 @@
-package com.project.poseid_server.rest;
+package com.project.poseid_server.adapter.rest; //是否需要adapter?
 
 import com.project.poseid_server.service.seller.discount.add.AddSellerDiscountUseCase;
 import com.project.poseid_server.service.seller.discount.add.AddSellerDiscountUseCaseInput;
@@ -26,7 +26,9 @@ import com.project.poseid_server.service.seller.product.get.GetSellerProductUseC
 import com.project.poseid_server.service.seller.product.remove.RemoveSellerProductUseCase;
 import com.project.poseid_server.service.seller.product.remove.RemoveSellerProductUseCaseInput;
 import com.project.poseid_server.service.seller.product.remove.RemoveSellerProductUseCaseOutput;
-
+import com.project.poseid_server.service.seller.product.update.UpdateSellerProductUseCase;
+import com.project.poseid_server.service.seller.product.update.UpdateSellerProductUseCaseInput;
+import com.project.poseid_server.service.seller.product.update.UpdateSellerProductUseCaseOutput;
 import com.project.poseid_server.service.management.user.*;
 
 import com.project.poseid_server.service.exception.AddDiscountErrorException;
@@ -43,12 +45,13 @@ import com.project.poseid_server.service.exception.LoginErrorException;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponeseEntity;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 @RestController
 @RequestMapping("/api/seller")

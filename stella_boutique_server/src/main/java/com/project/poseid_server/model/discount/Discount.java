@@ -1,4 +1,4 @@
-package com.project.poseid_service.model.discount;
+package com.project.poseid_server.model.discount;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;

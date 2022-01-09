@@ -78,7 +78,7 @@ public class GetSellerOrderUseCase {
                     String description = rs.getString("description");
                     String pictureURL = rs.getString("pictureURL");
     
-                    Item item = new Item(id, name, quantity, category, size, price, description, pictureURL);
+                    Item item = new Item(id, name, quantity, category, price, description, pictureURL);
                     item.setBuyAmount(amount);
                     
                     System.out.println(item.getName());

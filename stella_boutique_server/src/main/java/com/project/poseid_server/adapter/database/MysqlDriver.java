@@ -1,4 +1,4 @@
-package com.project.poseid_service.adapter.database;
+package com.project.poseid_server.adapter.database;
 
 import java.sql.*;
 
@@ -9,8 +9,8 @@ public class MysqlDriver {
 
     public MysqlDriver() {
         this.mysqlURL = "jdbc:mysql://localhost:3306/?user=root";
-        this.user = "root";
-        this.password = "admin"; // Asdf2460
+        this.user = "admin";
+        this.password = "Asdf2460"; // Asdf2460
     }
 
     public Connection getConnection() throws SQLException {
@@ -25,5 +25,4 @@ public class MysqlDriver {
             /* No connection */
         }
     }
-
 }

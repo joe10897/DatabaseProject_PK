@@ -1,4 +1,4 @@
-package com.project.poseid_service.model.user;
+package com.project.poseid_server.model.user;
 
 import java.util.Random;
 

@@ -1,6 +1,4 @@
-package com.project.poseid_server.rest;
-
-package com.project.poseid_server.rest;
+package com.project.poseid_server.adapter.rest; //是否需要adapter?
 
 import com.project.poseid_server.service.user.like.add.AddLikeUseCase;
 import com.project.poseid_server.service.user.like.add.AddLikeUseCaseInput;
@@ -26,7 +24,6 @@ import com.project.poseid_server.service.user.order.item.remove.RemoveFromOrderU
 import com.project.poseid_server.service.user.order.item.update.UpdateOrderUseCase;
 import com.project.poseid_server.service.user.order.item.update.UpdateOrderUseCaseInput;
 import com.project.poseid_server.service.user.order.item.update.UpdateOrderUseCaseOutput;
-
 
 import com.project.poseid_server.service.exception.AddLikeErrorException;
 import com.project.poseid_server.service.exception.GetLikeErrorException;

@@ -1,8 +1,8 @@
-package com.project.poseid_service.model.order;
+package com.project.poseid_server.model.order;
 
 import java.util.List;
 import java.util.ArrayList;
-import com.project.stella_boutique.model.item.Item;
+import com.project.poseid_server.model.item.Item;
 
 public class Order {
 

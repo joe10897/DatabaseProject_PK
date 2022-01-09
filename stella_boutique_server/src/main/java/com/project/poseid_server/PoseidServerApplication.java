@@ -1,4 +1,4 @@
-package com.example.poseid_server;
+package com.project.poseid_server;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

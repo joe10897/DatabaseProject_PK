@@ -1,10 +1,10 @@
-package com.project.poseid_service.config;
+package com.project.poseid_server.config;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
-import com.project.stella_boutique.adapter.database.MysqlDriver;
+import com.project.poseid_server.adapter.database.MysqlDriver;
 import org.springframework.web.filter.CorsFilter;
 import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;

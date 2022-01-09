@@ -1,4 +1,4 @@
-package com.project.poseid_service.model.item;
+package com.project.poseid_server.model.item;
 
 import java.util.List;
 import java.util.ArrayList;
@@ -7,7 +7,7 @@ public class Item {
     private int itemID;
     private int quantity;
     private String category;
-    private String size;
+    // private String size;
     private Float price;
     private String description;
     private String pictureURL;

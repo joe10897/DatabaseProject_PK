@@ -1,4 +1,4 @@
-package com.project.poseid_service.model.item;
+package com.project.poseid_server.model.itemlist;
 
 public class ItemList {
     
