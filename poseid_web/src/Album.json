@@ -1,0 +1,46 @@
+
+[
+  {
+    "id": 1,
+    "img": "./img/items/P-FC-21-001_img01.png",
+    "title": "Classic Cheongsam In Pastel",
+    "desc": "Pretty in every Color",
+    "price": 250,
+    "discount": true
+  },
+  {
+    "id": 2,
+    "img": "./img/items/P-FC-21-002_img01.png",
+    "title": "Qi Dress",
+    "desc":"New Chinese Classic C0llection",
+    "price": 1160
+  },
+  {
+    "id": 3,
+    "img": "./img/items/P-FC-21-003_img01.png",
+    "title": "Shuang Xi Dress",
+    "desc": "All good things fullfil your new year",
+    "price": 1200
+  },
+  {
+    "id": 4,
+    "img": "./img/items/P-FC-21-004_img01.png",
+    "title": "Huo Yan Top",
+    "desc": "Pairing with a scarf",
+    "price": 800
+  },
+  {
+    "id": 5,
+    "img": "./img/items/P-FW-21-001_img01.png",
+    "title": "Feng Fu Top",
+    "desc": "Lift your style and your mood",
+    "price": 790
+  },
+  {
+    "id": 6,
+    "img": "./img/items/P-FW-21-002_img01.png",
+    "title": "Fang Fang Top",
+    "desc": "Feminine and flowy",
+    "price": 1200
+  }
+]

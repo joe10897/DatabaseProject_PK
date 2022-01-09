@@ -13,7 +13,10 @@ To run the frontend:
 - npm run start
 
 To run the backend:
-- mvn clean spring-boot
+- mvn clean spring-boot:run
+
+To stop the backend:
+- mvn clean spring-boot:stop
 
 Demo:
 - seller
