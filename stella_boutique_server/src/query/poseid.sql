@@ -1,9 +1,7 @@
 #CREATE DATABASE IF NOT EXISTS poseid;
 USE poseid;
-
-#ALTER stella_boutique MyTestDatabase MODIFY NAME = poseid;
  
-#select 
+#test
 SELECT * FROM `user`;
 SELECT * FROM `item`;
 SELECT * FROM `discount`;
