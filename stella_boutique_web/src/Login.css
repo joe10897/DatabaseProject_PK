@@ -5,8 +5,8 @@
     .Login {
       padding: 0 0;
       height: 60vw;
-      /* background-color: #faeeec; */
-      background-image:url('../src/img/background.jpg');
+      background-color: #EBEBEB;
+      /* background-image:url('../src/img/background.jpg'); */
       background-repeat:no-repeat;
       -moz-background-size:100% 100%;
       -webkit-background-size:100% 100%;
@@ -23,6 +23,6 @@
     }
 
     .LoginBtn {
-      background-color:'#9e7d7a',
+      background-color:#9e7d7a,
     }
   }
