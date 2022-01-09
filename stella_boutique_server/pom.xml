@@ -14,10 +14,12 @@
 	<name>poseid_server</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
-		<java.version>1.8</java.version>
+		<java.version>17</java.version>
 	</properties>
+
 	<dependencies>
 		<dependency>
+		<!--    Spring boot    -->
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
@@ -27,6 +29,13 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+
+	    <!--    MySQL    -->
+		<dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+        </dependency>
 	</dependencies>
 
 	<build>
@@ -37,7 +46,9 @@
 			</plugin>
 		</plugins>
 	</build>
-	<repositories>
+
+</project>
+	<!-- <repositories>
 		<repository>
 			<id>spring-milestones</id>
 			<name>Spring Milestones</name>
@@ -74,4 +85,4 @@
 		</pluginRepository>
 	</pluginRepositories>
 
-</project>
+</project> -->
