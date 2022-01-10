@@ -7,7 +7,6 @@ public class Item {
     private int itemID;
     private int quantity;
     private String category;
-    // private String size;
     private Float price;
     private String description;
     private String pictureURL;

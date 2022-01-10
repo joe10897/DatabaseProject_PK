@@ -36,11 +36,9 @@ public class GetProductUseCase {
                         String name = rs.getString("name");
                         int quantity = Integer.parseInt(rs.getString("quantity"));
                         String category = rs.getString("category");
-                        String size = rs.getString("size");
                         Float price = rs.getFloat("price");
                         String description = rs.getString("description");
                         String pictureURL = rs.getString("pictureURL");
-    
                         Item item = new Item(id, name, quantity, category, price, description, pictureURL);
                         getRate(item,connection);
                         productList.add(item);

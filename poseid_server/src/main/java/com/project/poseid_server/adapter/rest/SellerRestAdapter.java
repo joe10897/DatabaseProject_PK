@@ -188,7 +188,7 @@ public class SellerRestAdapter {
     //--------------------------------------------------------------------------------------------------------------------------------
     @PostMapping(value = "/add/product")
     public ResponseEntity<AddSellerProductUseCaseOutput> addProduct(@RequestBody AddSellerProductUseCaseInput requestBody) {
-        AddSellerProductUseCaseInput input = new AddSellerProductUseCaseInput(requestBody.getName(),requestBody.getQuantity(),requestBody.getCategory(),requestBody.getSize(),requestBody.getPrice(),requestBody.getDescription(),requestBody.getPictureURL());
+        AddSellerProductUseCaseInput input = new AddSellerProductUseCaseInput(requestBody.getName(),requestBody.getQuantity(),requestBody.getCategory(),requestBody.getPrice(),requestBody.getDescription(),requestBody.getPictureURL());
         AddSellerProductUseCaseOutput output = new AddSellerProductUseCaseOutput();
         
         //------------------------------Unfinished------------------------------

@@ -38,7 +38,7 @@ class Newarrivals extends Component {
   
     render() {
         return (
-            <div style={{backgroundColor:"rgb(255, 239, 236)",margin:"-6px 0"}}>
+            <div>
                 <div style={{margin:'10px' , display: 'flex',  justifyContent:'flex-end ', alignItems:'center'}}>
                     <Form inline>
                         <FormControl type="text" placeholder="Search" onChange={this.handleChange} className="mr-sm-2" />
@@ -48,7 +48,7 @@ class Newarrivals extends Component {
                 <Row style={{margin:'10px 100px' , display: 'flex',  justifyContent:'flex-end ', alignItems:'center'}}>
                 {
                   this.props.ProductList.map((item,key) => {
-                    if(key>23){
+                    if(key>0){
                       if(this.state.searchname == "")
                       {
                         console.log(item.itemID)
@@ -62,9 +62,7 @@ class Newarrivals extends Component {
                           return(
                           <ProductItem key={item.itemID} product={item}/>
                           )
-                      
                       }
-                      
                     }  
                   })
                 }

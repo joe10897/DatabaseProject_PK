@@ -15,6 +15,7 @@ import com.project.poseid_server.service.exception.GetDiscountErrorException;
 import com.project.poseid_server.service.exception.GetProductErrorException;
 import com.project.poseid_server.service.exception.GetRateErrorException;
 import com.project.poseid_server.service.exception.LoginErrorException;
+import com.project.poseid_server.service.exception.AddUserErrorException;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -61,6 +62,19 @@ public class GuestRestAdapter {
         }
         return ResponseEntity.status(HttpStatus.OK).body(output);
     }
+
+    @PostMapping(value= "/Register")
+    public String addUser(@RequestBody AddUserUseCaseInput requestBody) {
+        // AddUserUseCaseInput input = new AddUserUseCaseInput(requestBody.getPassword(),requestBody.getFullName(),requestBody.getUsername(),requestBody.getBirthday(),requestBody.getAddress(),requestBody.getPhoneNumber(),requestBody.getEmail());
+        // AddUserUseCaseOutput output = new AddUsertUseCaseOutput();
+        try {
+            this.addUserUseCase.execute(requestBody.getUsername(),requestBody.getPassword(),requestBody.getFullName(),requestBody.getBirthday(),requestBody.getAddress(),requestBody.getPhoneNumber(),requestBody.getEmail());
+        } catch (AddUserErrorException e) {
+            return "get failed";
+        }
+        return "get successfully";
+    }
+    
 
     @GetMapping(value= "/product")
     public ResponseEntity<GetProductUseCaseOutput> getAllProduct() {        

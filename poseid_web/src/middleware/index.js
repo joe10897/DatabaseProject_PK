@@ -67,7 +67,7 @@ const myMiddleware = store => next => action => {
             action.email
             )
         // console.log(body)
-        axios.post(API_HOST + '/Register', body, {headers: headers})
+        axios.post(API_HOST + '/guest/Register', body, {headers: headers})
         .then(response => {
             action.registerUser(
                 action.username,

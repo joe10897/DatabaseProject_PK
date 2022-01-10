@@ -9,6 +9,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import com.project.poseid_server.service.exception.AddUserErrorException;
 
 @Service
 public class AddUserUseCase {
@@ -18,7 +19,7 @@ public class AddUserUseCase {
     public AddUserUseCase(MysqlDriver mysqlDriver){
         this.mysqlDriver = mysqlDriver;
     }
-    private void execute(String username, String password, String fullname, String birthday, String address, String phoneNumber, String email) {
+    public void execute(String username, String password, String fullname, String birthday, String address, String phoneNumber, String email) throws AddUserErrorException {
         try(Connection connection = this.mysqlDriver.getConnection()) {
             try (PreparedStatement stmt = connection.prepareStatement(
                     "INSERT INTO `user`" +

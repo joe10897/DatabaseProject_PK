@@ -3,17 +3,15 @@ package com.project.poseid_server.service.seller.product.add;
 public class AddSellerProductUseCaseInput {
     private int quantity;
     private String category;
-    private String size;
     private int price;
     private String description;
     private String pictureURL;
     private String name;
 
-	public AddSellerProductUseCaseInput(String name, int quantity, String category, String size ,int price, String description, String pictureURL){
+	public AddSellerProductUseCaseInput(String name, int quantity, String category, int price, String description, String pictureURL){
 		this.name = name;
 		this.quantity = quantity;
 		this.category = category;
-		this.size = size;
 		this.price = price;
 		this.description = description;
 		this.pictureURL = pictureURL;
@@ -32,14 +30,6 @@ public class AddSellerProductUseCaseInput {
 	
 	public void setCategory(String category) {
 		this.category = category;
-	}
-
-	public String getSize() {
-		return this.size;
-	}
-
-	public void setSize(String size) {
-		this.size = size;
 	}
 
 	public int getPrice() {

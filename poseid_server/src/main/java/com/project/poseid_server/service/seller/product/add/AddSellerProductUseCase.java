@@ -27,13 +27,12 @@ public class AddSellerProductUseCase {
 
         try(Connection connection = this.mysqlDriver.getConnection()) {
             try (PreparedStatement stmt = connection.prepareStatement(
-                    "INSERT `item` (`name`, `quantity`, `category`, `size`, `price`, `description`, `pictureURL` )" +
+                    "INSERT `item` (`name`, `quantity`, `category`, `price`, `description`, `pictureURL` )" +
                     " VALUES (?,?,?,?,?,?,?)"
                 )) {
                     stmt.setString(1, input.getName());
                     stmt.setString(2, Integer.toString(input.getQuantity()));
                     stmt.setString(3, input.getCategory());
-                    stmt.setString(4, input.getSize());
                     stmt.setString(5, Integer.toString(input.getPrice()));
                     stmt.setString(6, input.getDescription());
                     stmt.setString(7, input.getPictureURL());
