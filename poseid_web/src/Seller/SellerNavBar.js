@@ -64,7 +64,7 @@ function SellerNavBar(props) {
     const [profileOpen,setProfileClose] = useState(false); 
     useState(() => {
       props.setUser(username,userID);
-    });
+    }, []);
 
     function handleLogout() {
       localStorage.clear();
