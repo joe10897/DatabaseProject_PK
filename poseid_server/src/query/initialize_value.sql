@@ -1,5 +1,8 @@
 USE poseid;
 
+-- 刪除
+-- DROP TABLE table_name;
+
 INSERT `user` (`password`,`fullname`,`username`,`birthday`,`address`,`phoneNumber`,`email`) VALUES
 ('test', 'eric', 'eric','1998-12-20','home' ,'0912312345' , 'eric@gmail.com'),
 ('test', 'kai', 'kai', '1999-01-04', 'home', '0912345678', 'kai@gmail.com'),
@@ -11,8 +14,9 @@ INSERT `user` (`password`,`fullname`,`username`,`birthday`,`address`,`phoneNumbe
 
 INSERT `discount` (`value`,`code` ,`name` ,`startDate`,`endDate`) VALUES
 (0,0,0,0,0),
-(0.8,"NY001", "New Year Sale 20% OFF","2021-01-01", "2021-01-30"),
-(0.5,"CT001", "Christmast Gift 50% OFF","2020-12-15", "2020-12-30");
+(0.8,"NY001", "2022 New Year Sale 20% OFF","2022-01-01", "2022-01-30"),
+(0.5,"SP001", "Special Offer 50% OFF","2022-01-01", "2022-12-31"),
+(0.2,"TE001", "Mr. Liu Become Suger Duddy","2022-01-01", "2022-12-31");
 
 -- SELECT * FROM `item`;
 -- ALTER TABLE `item` DROP column `size`;
