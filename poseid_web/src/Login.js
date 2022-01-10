@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme) => ({
     navButtons: {
       fontFamily: 'Bebas Neue',
       '&:hover': {
-        color:'#c26d5c'
+        color:'#9C6244'
      },
     }
   }));

@@ -23,12 +23,12 @@ const useStyles = makeStyles((theme) => ({
     heroContent: {
       backgroundColor: theme.palette.background.paper,
       padding: theme.spacing(8, 0, 6),
-      backgroundColor: '#f7ebea',
+      backgroundColor: '#000000',
     },
     navButtons: {
       fontFamily: 'Bebas Neue',
       '&:hover': {
-        color:'#c26d5c'
+        color:'#D0C8D0'
      },
     },
     cardGrid: {
@@ -122,10 +122,10 @@ function SellerNavBar(props) {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
-              <Nav.Link href="/ProductManage">PRODUCT</Nav.Link>
+              <Nav.Link href="/ProductManage">EDIT PRODUCT</Nav.Link>
+              <Nav.Link href="/AddProduct">ADD PRODUCT</Nav.Link>
               <Nav.Link href="/OrderManage">ORDER</Nav.Link>
               <Nav.Link href="/MemberManage">MEMBER</Nav.Link>
-              <Nav.Link href="/AddProduct">ADD PRODUCT</Nav.Link>
               <Nav.Link href="/AddDiscount">ADD DISCOUNT</Nav.Link>
             </Nav>
             <Nav className="mr-right">

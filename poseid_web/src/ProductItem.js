@@ -55,7 +55,7 @@ function ProductItem(props){
     
     return ( 
         <Col sm={6} md={4} className="mb-3" >
-            <Card style={{margin:'0px 50px'}}>
+            <Card style={{margin:'0px 10px'}}>
                 <div className="img">
                     <CardImg className="card-img" src={require(""+props.product.pictureURL)} alt="Card image cap" />
                 </div>
@@ -63,7 +63,7 @@ function ProductItem(props){
                 <CardTitle>{props.product.name}</CardTitle>
                 <CardSubtitle> 
                     <h4>
-                        <Badge color="success">售價：{props.product.price}</Badge>
+                        <Badge backgroundColor="#7DB588">Price: NTD {props.product.price}-</Badge>
                     </h4>
                 </CardSubtitle>
                 <CardText>{props.product.description}</CardText>

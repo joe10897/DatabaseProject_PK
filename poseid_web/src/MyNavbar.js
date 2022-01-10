@@ -157,7 +157,7 @@ function MyNavbar(props) {
             <div>
               <Button color="secondary" onClick={handleCartOpen}>購物車</Button>
               <Button className={classes.navButtons} variant="contained" color="primary" onClick={goToProfile}>Profile</Button>
-              <Button href="/Login" className={classes.navButtons} variant="contained" color="primary" onClick={handleLogout}>logout</Button>              
+              <Button href="/Login" className={classes.navButtons} variant="contained" color="primary" onClick={handleLogout}>LOGOUT</Button>              
             </div>
             }
         </Navbar>

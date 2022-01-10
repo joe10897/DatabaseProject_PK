@@ -21,22 +21,22 @@ INSERT `discount` (`value`,`code` ,`name` ,`startDate`,`endDate`) VALUES
 -- SELECT * FROM `item`;
 -- ALTER TABLE `item` DROP column `size`;
 
-INSERT `item`　(`name`,`quantity`,`category`,`price`,`description`,`pictureURL`) VALUES
-("Professional Grooming Styling Cream (HARD) (80g)",15,"hair-styling",149,"徹底堅持髮腊<br>Poseid造型品能讓你透過各式各樣造型<br>成為成熟上質感大人","./img/items/P-HS-21-001_img01.png"),
-("Professional Grooming Styling Cream (EX HARD) (80g)",10,"hair-styling",149,"歷久彌堅髮腊<br>Poseid造型品能讓你透過各式各樣造型<br>成為成熟上質感大人","./img/items/P-HS-21-002_img01.png"),
-("Professional Grooming Styling Cream (WET) (80g)",15,"hair-styling",149,"極度洗練髮凍<br>Poseid造型品能讓你透過各式各樣造型<br>成為成熟上質感大人","./img/items/P-HS-21-003_img01.png"),
-("Professional Grooming Styling Cream (MATTE) (80g)",15,"hair-styling",149,"絕對上進凝土<br>Poseid造型品能讓你透過各式各樣造型<br>成為成熟上質感大人","./img/items/P-HS-21-004_img01.png"),
-("Professional Grooming Styling Cream (NUANCE) (80g)",15,"hair-styling",149,"隨意帥性輕髮腊<br>Poseid造型品能讓你透過各式各樣造型<br>成為成熟上質感大人","./img/items/P-HS-21-005_img01.png"),
-("Professional Face Care Face Cream (NORMAL) (100g)",20,"face-care",169,"完效肌膚保養凍<br>其實很簡單！濃縮5道保養程序，早上洗臉後，1瓶就可以！<br>新升級活膚配方，ALL IN ONE多效保養一瓶搞定","./img/items/P-FC-21-001_img01.png"),
-("Professional Face Care Face Cream (MOIST) (100g)",20,"face-care",169,"完效肌膚保養凍 保濕型<br>其實很簡單！濃縮5道保養程序，早上洗臉後，1瓶就可以！<br>1瓶即可充分補水，長效保濕！","./img/items/P-FC-21-002_img01.png"),
-("Professional Face Care Face Cream (EX COOL) (100g)",20,"face-care",169,"完效肌膚保養凍 特涼型<br>新升級活膚配方，ALL IN ONE多效保養一瓶搞定","./img/items/P-FC-21-003_img01.png"),
-("Professional Face Care Face Cream (GOLD) (90g)",20,"face-care",209,"完效肌膚保養凍 黃金配方<br>新升級活膚配方，ALL IN ONE多效保養一瓶搞定","./img/items/P-FC-21-004_img01.png"),
-("Professional Whip Wash (BLACK) (120g)",25,"face-wash",129,"炭洗顏<br>添加淨油炭粉的超濃密泡沫！<br>控油力UP<br>清除皮脂、洗淨油光，呈現超清爽肌膚。","./img/items/P-FW-21-001_img01.png"),
-("Professional Whip Wash (SCRUB) (120g)",25,"face-wash",129,"淨洗顏<br>添加雙重植物性磨砂成分的濃密泡沫<br>潔淨力UP<br>能深入清潔毛孔髒污、黑頭，同時去除粗糙角質","./img/items/P-FW-21-002_img01.png"),
-("Professional Whip Wash (MOIST) (120g)",25,"face-wash",129,"潤洗顏<br>添加雙重玻尿酸的超濃密泡沫<br>保水力UP<br>溫和潔淨，為乾燥的肌膚充足保水","./img/items/P-FW-21-003_img01.png"),
-("Professional Skin Care Tank (MOIST) (110ml)",15,"skin-care",199,"俐落至上機能水 保濕型<br>1瓶即可充分補水，長效保濕！<br>10秒針對男人的乾粗困擾","./img/items/P-SC-21-001_img01.png"),
-("Professional Skin Care Tank (OIL CONTROL) (110ml)",15,"skin-care",199,"俐落至上機能水 控油型<br>1瓶即可避免油光，乾淨清爽！<br>10秒針對男人的油光困擾","./img/items/P-SC-21-002_img01.png"),
-("Professional Skin Care Tank (MILD) (110ml)",15,"skin-care",199,"俐落至上機能水 敏感型<br>1瓶即可溫和保養，調理肌膚！<br>10秒針對男人的敏感困擾","./img/items/P-SC-21-003_img01.png");
+INSERT `item` (`name`,`quantity`,`category`,`price`,`description`,`pictureURL`) VALUES
+("Professional Grooming Styling Cream (HARD) (80g)",15,"hair-styling",149,"徹底堅持髮腊\r\nPoseid造型品能讓你透過各式各樣造型\r\n成為成熟上質感大人","./img/items/P-HS-21-001_img01.png"),
+("Professional Grooming Styling Cream (EX HARD) (80g)",10,"hair-styling",149,"歷久彌堅髮腊\r\nPoseid造型品能讓你透過各式各樣造型\r\n成為成熟上質感大人","./img/items/P-HS-21-002_img01.png"),
+("Professional Grooming Styling Cream (WET) (80g)",15,"hair-styling",149,"極度洗練髮凍\r\nPoseid造型品能讓你透過各式各樣造型\r\n成為成熟上質感大人","./img/items/P-HS-21-003_img01.png"),
+("Professional Grooming Styling Cream (MATTE) (80g)",15,"hair-styling",149,"絕對上進凝土\r\nPoseid造型品能讓你透過各式各樣造型\r\n成為成熟上質感大人","./img/items/P-HS-21-004_img01.png"),
+("Professional Grooming Styling Cream (NUANCE) (80g)",15,"hair-styling",149,"隨意帥性輕髮腊\r\nPoseid造型品能讓你透過各式各樣造型\r\n成為成熟上質感大人","./img/items/P-HS-21-005_img01.png"),
+("Professional Face Care Face Cream (NORMAL) (100g)",20,"face-care",169,"完效肌膚保養凍\r\n其實很簡單！濃縮5道保養程序，早上洗臉後，1瓶就可以！\r\n新升級活膚配方，ALL IN ONE多效保養一瓶搞定","./img/items/P-FC-21-001_img01.png"),
+("Professional Face Care Face Cream (MOIST) (100g)",20,"face-care",169,"完效肌膚保養凍 保濕型\r\n其實很簡單！濃縮5道保養程序，早上洗臉後，1瓶就可以！\r\n1瓶即可充分補水，長效保濕！","./img/items/P-FC-21-002_img01.png"),
+("Professional Face Care Face Cream (EX COOL) (100g)",20,"face-care",169,"完效肌膚保養凍 特涼型\r\n新升級活膚配方，ALL IN ONE多效保養一瓶搞定","./img/items/P-FC-21-003_img01.png"),
+("Professional Face Care Face Cream (GOLD) (90g)",20,"face-care",209,"完效肌膚保養凍 黃金配方\r\n新升級活膚配方，ALL IN ONE多效保養一瓶搞定","./img/items/P-FC-21-004_img01.png"),
+("Professional Whip Wash (BLACK) (120g)",25,"face-wash",129,"炭洗顏\r\n添加淨油炭粉的超濃密泡沫！\r\n控油力UP\r\n清除皮脂、洗淨油光，呈現超清爽肌膚。","./img/items/P-FW-21-001_img01.png"),
+("Professional Whip Wash (SCRUB) (120g)",25,"face-wash",129,"淨洗顏\r\n添加雙重植物性磨砂成分的濃密泡沫\r\n潔淨力UP\r\n能深入清潔毛孔髒污、黑頭，同時去除粗糙角質","./img/items/P-FW-21-002_img01.png"),
+("Professional Whip Wash (MOIST) (120g)",25,"face-wash",129,"潤洗顏\r\n添加雙重玻尿酸的超濃密泡沫\r\n保水力UP\r\n溫和潔淨，為乾燥的肌膚充足保水","./img/items/P-FW-21-003_img01.png"),
+("Professional Skin Care Tank (MOIST) (110ml)",15,"skin-care",199,"俐落至上機能水 保濕型\r\n1瓶即可充分補水，長效保濕！\r\n10秒針對男人的乾粗困擾","./img/items/P-SC-21-001_img01.png"),
+("Professional Skin Care Tank (OIL CONTROL) (110ml)",15,"skin-care",199,"俐落至上機能水 控油型\r\n1瓶即可避免油光，乾淨清爽！\r\n10秒針對男人的油光困擾","./img/items/P-SC-21-002_img01.png"),
+("Professional Skin Care Tank (MILD) (110ml)",15,"skin-care",199,"俐落至上機能水 敏感型\r\n1瓶即可溫和保養，調理肌膚！\r\n10秒針對男人的敏感困擾","./img/items/P-SC-21-003_img01.png");
 
 INSERT `like` VALUES
 (1,1),

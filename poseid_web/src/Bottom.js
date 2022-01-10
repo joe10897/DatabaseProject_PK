@@ -38,7 +38,7 @@ class Bottom extends Component {
 
     render() {
         return (
-            <div style={{backgroundColor:"rgb(255, 239, 236)",margin:"-6px 0"}}>
+            <div style={{backgroundColor:"#000000",margin:"-6px 0"}}>
                 <div style={{margin:'10px' , display: 'flex',  justifyContent:'flex-end ', alignItems:'center'}}>
                     <Form inline>
                         <FormControl type="text" placeholder="Search" onChange={this.handleChange} className="mr-sm-2" />
