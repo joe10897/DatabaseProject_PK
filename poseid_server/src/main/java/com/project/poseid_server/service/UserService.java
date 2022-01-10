@@ -49,52 +49,52 @@ public class UserService {
         }
     }
     
-    public void AddUser(User user) {
-        insert into user
-    }
+//     public void AddUser(User user) {
+//         insert into user
+//     }
 
-    public void Login(User user) {
+//     public void Login(User user) {
 
-    }
+//     }
 
-    public void CreateOrder() {
-        INSERT INTO order;
-    }
+//     public void CreateOrder() {
+//         INSERT INTO order;
+//     }
 
-    public void AddItemList() {
-        insert into item list;
-    }
+//     public void AddItemList() {
+//         insert into item list;
+//     }
 
-    public void UpdateItemist() {
-        update item list (update amount);
-    }
+//     public void UpdateItemist() {
+//         update item list (update amount);
+//     }
 
-    public void RemoveItemist() {
-        remove item list;
-    }
+//     public void RemoveItemist() {
+//         remove item list;
+//     }
 
-    public void UseDiscount() {
-        update order entity (update discID);
-    }
+//     public void UseDiscount() {
+//         update order entity (update discID);
+//     }
 
-    public void checkoutOrder() {
-        update order entity (order status);
-    }
+//     public void checkoutOrder() {
+//         update order entity (order status);
+//     }
 
-    public void UpdateStock() {
-        update the stock of product when user checkout;
-    }
+//     public void UpdateStock() {
+//         update the stock of product when user checkout;
+//     }
 
-    public void getOrderHistory(User user) {
-        get all the user order from order join itemlist(amount) join item(name) join disc(disc name);
-    }
+//     public void getOrderHistory(User user) {
+//         get all the user order from order join itemlist(amount) join item(name) join disc(disc name);
+//     }
 
-    public void GetLikeItem(User user) {
+//     public void GetLikeItem(User user) {
 
-    }
-    public void RemoveLikeItem(User user) {
+//     }
+//     public void RemoveLikeItem(User user) {
 
-    }
+//     }
     
 
 }

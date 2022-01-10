@@ -21,7 +21,7 @@ INSERT `discount` (`value`,`code` ,`name` ,`startDate`,`endDate`) VALUES
 -- SELECT * FROM `item`;
 -- ALTER TABLE `item` DROP column `size`;
 
-INSERT `item`(`name`,`quantity`,`category`,`price`,`description`,`pictureURL`) VALUES
+INSERT `item`　(`name`,`quantity`,`category`,`price`,`description`,`pictureURL`) VALUES
 ("Professional Grooming Styling Cream (HARD) (80g)",15,"hair-styling",149,"徹底堅持髮腊<br>Poseid造型品能讓你透過各式各樣造型<br>成為成熟上質感大人","./img/items/P-HS-21-001_img01.png"),
 ("Professional Grooming Styling Cream (EX HARD) (80g)",10,"hair-styling",149,"歷久彌堅髮腊<br>Poseid造型品能讓你透過各式各樣造型<br>成為成熟上質感大人","./img/items/P-HS-21-002_img01.png"),
 ("Professional Grooming Styling Cream (WET) (80g)",15,"hair-styling",149,"極度洗練髮凍<br>Poseid造型品能讓你透過各式各樣造型<br>成為成熟上質感大人","./img/items/P-HS-21-003_img01.png"),
