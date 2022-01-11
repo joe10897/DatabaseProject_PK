@@ -1,16 +1,6 @@
 -- DROP DATABASE poseid;
 -- CREATE DATABASE IF NOT EXISTS poseid;
 USE poseid;
- 
--- test
-SELECT * FROM `user`;
-SELECT * FROM `item`;
-SELECT * FROM `discount`;
-SELECT * FROM `like`;
-SELECT * FROM `order`;
-SELECT * FROM `itemlist`;
-SELECT * FROM `rate`;
-SHOW INDEX FROM `discount` WHERE key_name = 'PRIMARY';
 
 -- Table structure for table `user`
 CREATE TABLE IF NOT EXISTS `user`(

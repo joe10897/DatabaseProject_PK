@@ -61,3 +61,15 @@ INSERT `itemlist` VALUES
 (3,1,1),
 (4,2,2),
 (3,2,3);
+
+----------------------------
+-- test
+----------------------------
+-- SELECT * FROM `user`;
+-- SELECT * FROM `item`;
+-- SELECT * FROM `discount`;
+-- SELECT * FROM `like`;
+-- SELECT * FROM `order`;
+-- SELECT * FROM `itemlist`;
+-- SELECT * FROM `rate`;
+-- SHOW INDEX FROM `discount` WHERE key_name = 'PRIMARY';
