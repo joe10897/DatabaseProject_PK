@@ -23,6 +23,7 @@ Demo:
 - https://youtu.be/hAgIjWWh47w
 
 Documentation:
-- Coming Soon
+- SRS: Coming Soon
+- PPT: https://ntutcc.sharepoint.com/:p:/s/110-1_Database_team15/EY-6DTqWFJlIqF7V_7Omb80BuiH1xgrdrYKAvyPdLyxz0w?e=loOgPt
 
 
