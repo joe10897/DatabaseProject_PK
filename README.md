@@ -2,6 +2,7 @@
 
 An online shopping platform that was created using this framework:
 - React.js
+(https://docs.microsoft.com/en-us/windows/dev-environment/javascript/react-on-windows)
 - Spring-boot
 - MySQL
 
